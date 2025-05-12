@@ -1,0 +1,153 @@
+.ilaundry-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Header Layout */
+.ilaundry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+.nav-auth-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.ilaundry-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.ilaundry-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.ilaundry-nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 8px 20px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  margin-top: -5px;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background: white;
+  color: #0d0e0f;
+}
+
+.ilaundry-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 200px 80px 0 80px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.ilaundry-content h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.ilaundry-content .tagline {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.ilaundry-content .experience {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+
+/* @media (max-width: 768px) {
+  .ilaundry-content {
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .ilaundry-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .ilaundry-content .tagline {
+    font-size: 1.3rem;
+  }
+
+  .nav-auth-group {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .auth-buttons {
+    gap: 10px;
+  }
+
+  .login-btn,
+  .signup-btn {
+    padding: 6px 15px;
+    font-size: 0.8rem;
+  }
+} */

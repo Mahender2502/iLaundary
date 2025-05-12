@@ -1,0 +1,154 @@
+.login-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('image1.png') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .login-container {
+    background: rgba(144, 142, 142, 0.2);
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    animation: slideUp 0.5s ease-out;
+    color: #333;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-in-out;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #eee;
+    font-size: 14px;
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 6px;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 5px;
+    background: transparent;
+  }
+  
+  .remember-me-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .remember-me-container input[type="checkbox"] {
+    margin-right: 8px;
+    width: auto;
+    accent-color: #c4c9d3;
+  }
+  
+  .remember-me-container label {
+    position: static;
+    color: #eee;
+    font-size: 14px;
+    transition: none;
+    padding: 0;
+  }
+
+  button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #eff1f5, #a8b1bd);
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #caced5, #c4c9d3);
+    
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .forgot-password {
+    color: #e1e5ed;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .forgot-password:hover {
+    color: #fff;
+  }
+  
+  .sign-up-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #212020a9;
+  }
+  
+  .sign-up-link a {
+    color: #e5e8ed;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  .sign-up-link a:hover {
+    text-decoration: underline;
+  }
+  

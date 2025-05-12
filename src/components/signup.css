@@ -1,0 +1,101 @@
+.signup-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('image2.png') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .signup-container {
+    background: rgba(87, 45, 45, 0.2);
+    padding: 40px 30px;
+    border-radius: 16px;
+    width: 350px;
+    animation: slideUp 0.3s ease-out;
+    color: #c7c3c3;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+  }
+  
+  .signup-container h2 {
+    text-align: center;
+    color: #eae1e1;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .signup-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f4e9e9;
+    font-size: 14px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background: transparent;
+    color: #f6ebeb;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input::placeholder {
+    color: transparent;
+    background: transparent;
+    border: none;
+  }
+  
+  label {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    color: #f1e9e9;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    padding: 0 4px;
+    background: transparent;
+  }
+  
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 6px;
+    font-size: 12px;
+    color: #e8eff1;
+    background: transparent;
+    border: none;
+  }
+
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2b57b8;
+    color: rgb(9, 9, 9);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #4a64c6;
+  }
+  .sign-up-button a {
+    color: #e0e3e8;
+    text-decoration: underline;
+    font-weight: 500;
+  }  
+
+
+ 
